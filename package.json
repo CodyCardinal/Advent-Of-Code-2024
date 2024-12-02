@@ -1,0 +1,15 @@
+{
+  "name": "advent-of-code-2024",
+  "version": "1.0.0",
+  "description": "Trying to do this in Javascript. Which I think I'll be using a lot more next year.",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "advent-of-code-2024"
+  },
+  "author": "codycardinal",
+  "license": "MIT"
+}
