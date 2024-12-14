@@ -1,5 +1,5 @@
 const fs       = require("fs");
-const fileName = "input.txt";
+const fileName = "./input/day1.txt";
 let   left     = [];
 let   right    = [];
 let   lines    = [];
@@ -8,7 +8,7 @@ function prepareTheFile(fileName) {
   let fileContents = null;
   try {
     fileContents = fs.readFileSync(fileName, "utf-8");
-    console.log("successfully read input.txt");
+    console.log("successfully read " + fileName);
   } catch (err) {
     console.log("failed to read " + fileName);
   }
