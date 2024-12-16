@@ -33,18 +33,18 @@ function getLevels(reports, tolerance) {
 }
 
 function evalLevels(report, tolerance) {
-  function isAscending(arr) {
-    for (let i = 0; i < arr.length - 1; i++) {
-      if (arr[i] >= arr[i + 1] || arr[i + 1] - arr[i] > 3) {
+  function isAscending(report) {
+    for (let i = 0; i < report.length - 1; i++) {
+      if (report[i] >= report[i + 1] || report[i + 1] - report[i] > 3) {
         return false;
       }
     }
     return true;
   }
 
-  function isDescending(arr) {
-    for (let i = 0; i < arr.length - 1; i++) {
-      if (arr[i] <= arr[i + 1] || arr[i] - arr[i + 1] > 3) {
+  function isDescending(report) {
+    for (let i = 0; i < report.length - 1; i++) {
+      if (report[i] <= report[i + 1] || report[i] - report[i + 1] > 3) {
         return false;
       }
     }
